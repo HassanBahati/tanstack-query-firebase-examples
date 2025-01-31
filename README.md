@@ -4,4 +4,4 @@ A curated list of example apps built using [TanStack Query Firebase](https://doc
 
 ## Table of Contents
 1. [Firebase Data Connect Movies App](https://github.com/HassanBahati/tanstack-query-firebase-examples/tree/main/react/firebase-dataconnect-movies)
-2. [Expense Tracker App](https://github.com/HassanBahati/tanstack-query-firebase-examples/tree/main/react/realtime-expense-tracker-app)
+2. [Real-Time Expense Tracker App](https://github.com/HassanBahati/tanstack-query-firebase-examples/tree/main/react/realtime-expense-tracker-app)

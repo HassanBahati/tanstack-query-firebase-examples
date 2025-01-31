@@ -1,4 +1,4 @@
-# Expense Tracker App with TanStack Query Firebase 
+# Real-Time Expense Tracker App
 
 ![alt text](.github/building-a-real-time-expense-tracker-with-tansack-query-firebase.png)
 

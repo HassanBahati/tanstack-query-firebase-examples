@@ -35,9 +35,15 @@ importers:
       '@angular/router':
         specifier: ^19.1.0
         version: 19.2.0(@angular/common@19.2.0(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@19.2.0(@angular/animations@19.2.0(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0)))(@angular/common@19.2.0(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
+      '@firebasegen/default-connector':
+        specifier: file:dataconnect-generated/js/default-connector
+        version: file:dataconnect-generated/js/default-connector(firebase@11.4.0)
       '@tanstack-query-firebase/angular':
         specifier: 0.0.1-alpha.5
         version: 0.0.1-alpha.5(zkgpnld6vyq4q4bzqir6q67dd4)
+      '@tanstack/angular-query-experimental':
+        specifier: ^5.67.1
+        version: 5.67.1(@angular/common@19.2.0(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))
       firebase:
         specifier: ^11.4.0
         version: 11.4.0
@@ -1304,6 +1310,12 @@ packages:
   '@firebase/webchannel-wrapper@1.0.3':
     resolution: {integrity: sha512-2xCRM9q9FlzGZCdgDMJwc0gyUkWFtkosy7Xxr6sFgQwn+wMNIWd7xIvYNauU1r64B5L5rsGKy/n9TKJ0aAFeqQ==}
 
+  '@firebasegen/default-connector@file:dataconnect-generated/js/default-connector':
+    resolution: {directory: dataconnect-generated/js/default-connector, type: directory}
+    engines: {node: ' >=18.0'}
+    peerDependencies:
+      firebase: ^10.14.0 || ^11.3.0
+
   '@grpc/grpc-js@1.9.15':
     resolution: {integrity: sha512-nqE7Hc0AzI+euzUwDAy0aY5hCp10r734gMGRdU+qOPX0XSceI2ULrcXB5U2xSc5VkWwalCj4M7GzCAygZl2KoQ==}
     engines: {node: ^8.13.0 || >=10.10.0}
@@ -1976,8 +1988,17 @@ packages:
       '@angular/common': '>=16.0.0'
       '@angular/core': '>=16.0.0'
 
+  '@tanstack/angular-query-experimental@5.67.1':
+    resolution: {integrity: sha512-uzeW5V6fsbNHxlbNUSYi53O/SpuNrVdwegnRnHtXErqCOjbOEA34tOwRFtGkg1Rv7emgAPd/dZlnVFgC34rdQw==}
+    peerDependencies:
+      '@angular/common': '>=16.0.0'
+      '@angular/core': '>=16.0.0'
+
   '@tanstack/query-core@5.66.4':
     resolution: {integrity: sha512-skM/gzNX4shPkqmdTCSoHtJAPMTtmIJNS0hE+xwTTUVYwezArCT34NMermABmBVUg5Ls5aiUXEDXfqwR1oVkcA==}
+
+  '@tanstack/query-core@5.67.1':
+    resolution: {integrity: sha512-AkFmuukVejyqVIjEQoFhLb3q+xHl7JG8G9cANWTMe3s8iKzD9j1VBSYXgCjy6vm6xM8cUCR9zP2yqWxY9pTWOA==}
 
   '@tanstack/query-devtools@5.65.0':
     resolution: {integrity: sha512-g5y7zc07U9D3esMdqUfTEVu9kMHoIaVBsD0+M3LPdAdD710RpTcLiNvJY1JkYXqkq9+NV+CQoemVNpQPBXVsJg==}
@@ -6068,6 +6089,10 @@ snapshots:
 
   '@firebase/webchannel-wrapper@1.0.3': {}
 
+  '@firebasegen/default-connector@file:dataconnect-generated/js/default-connector(firebase@11.4.0)':
+    dependencies:
+      firebase: 11.4.0
+
   '@grpc/grpc-js@1.9.15':
     dependencies:
       '@grpc/proto-loader': 0.7.13
@@ -6645,7 +6670,16 @@ snapshots:
       '@tanstack/query-core': 5.66.4
       '@tanstack/query-devtools': 5.65.0
 
+  '@tanstack/angular-query-experimental@5.67.1(@angular/common@19.2.0(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))':
+    dependencies:
+      '@angular/common': 19.2.0(@angular/core@19.2.0(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
+      '@angular/core': 19.2.0(rxjs@7.8.2)(zone.js@0.15.0)
+      '@tanstack/query-core': 5.67.1
+      '@tanstack/query-devtools': 5.65.0
+
   '@tanstack/query-core@5.66.4': {}
+
+  '@tanstack/query-core@5.67.1': {}
 
   '@tanstack/query-devtools@5.65.0': {}
 
